@@ -1,3 +1,23 @@
+@keyframes scribbleText {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes subtle {
+  
+}
 *{
   margin: 0px;
   padding: 0px;
@@ -9,7 +29,6 @@
   background-color: #FFFFFF;
   justify-content:flex-end;
   align-items: center;
-  border: 1px solid grey;
 
 }
 .mini-menu{
@@ -20,34 +39,100 @@
 }
 .container{
 }
+
+
+
 .pageLanding{
   display: flex;
   text-align: center;
   flex-direction: column;
+  align-items: center;
+  margin: auto;
   width: 100%;
   height: 100%;
-  margin-bottom: 100vw;
-  margin-top: 50vh;
+  margin-bottom: 70vh;
+  margin-top: 25vh;
+    img{
+    max-width:1750px;
+    max-height: 600px;
+    position: absolute;
+    transform: scale(.4);
+    width: 130%;
+  }
+  #first{
+    animation: scribbleText 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+  #second{
+    animation: scribbleText 1.2s;
+    animation-iteration-count: infinite;
+  }
+  #third{
+    animation: scribbleText .9s;
+    animation-iteration-count: infinite;
+
+  }
 }
 
 
-#whiskey{
-  height: 120px;
-  width: 120px;
-  background-color: blue;
-}
-#vodka{
-  height: 120px;
-  width: 120px;
-  background-color: red;
-}
-#tequila{
-  height: 120px;
-  width: 120px;
-  background-color: green;
-}
-#gin{
-  height: 120px;
-  width: 120px;
-  background-color: yellow;
+
+
+.drinkTypes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  width: 100%;
+  margin-bottom: 10vh;
+  .drinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vw;
+  }
+  .column{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    justify-content: center;
+    width:100%;
+    .whiskey{
+      margin-right: 30%;
+      height: 20vw;
+      width: 20vw;
+      background-color: blue;
+      h2 {
+        margin-right: -40vw;
+      }
+    }
+    .tequila{
+      margin-right: 30%;
+      height: 20vw;
+      width: 20vw;
+      background-color: green;
+      h2 {
+        margin-right: -40vw;
+      }
+    }
+    .vodka{
+      margin-left: 30%;
+      height: 20vw;
+      width: 20vw;
+      background-color: red;
+      h2 {
+        margin-left: -40vw;
+      }
+    }
+    .gin{
+      margin-left: 30%;
+      height: 20vw;
+      width: 20vw;
+      background-color: yellow;
+      h2 {
+        margin-left: -40vw;
+      }
+    }
+  }
 }
