@@ -1,0 +1,53 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.navBar{
+  display: flex;
+  width: 100%;
+  height: 7vw;
+  background-color: #FFFFFF;
+  justify-content:flex-end;
+  align-items: center;
+  border: 1px solid grey;
+
+}
+.mini-menu{
+  width: 7%;
+  height: 80%;
+  max-width: 80px;
+  max-height:70px;
+}
+.container{
+}
+.pageLanding{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100vw;
+  margin-top: 50vh;
+}
+
+
+#whiskey{
+  height: 120px;
+  width: 120px;
+  background-color: blue;
+}
+#vodka{
+  height: 120px;
+  width: 120px;
+  background-color: red;
+}
+#tequila{
+  height: 120px;
+  width: 120px;
+  background-color: green;
+}
+#gin{
+  height: 120px;
+  width: 120px;
+  background-color: yellow;
+}
