@@ -1,4 +1,15 @@
 
 import './sass/input.scss';
+import $ from "jquery";
 
-console.log("Hey");
+$(document).ready(function(){
+
+
+$(".button").click(function(){
+    $(".ingredient1").addClass("fiveID1");
+    $(".ingredient2").addClass();
+    $(".ingredient2").addClass();
+    $(".ingredient2").addClass();
+    $(".ingredient2").addClass();
+  })
+})

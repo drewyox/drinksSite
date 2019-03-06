@@ -30,6 +30,10 @@
   }
 }
 
+
+
+
+
 *{
   margin: 0px;
   padding: 0px;
@@ -193,9 +197,134 @@
   justify-content: space-between;
   align-items: center;
   padding: none;
-
-
 }
+
+.drink2W {
+  // animation: blowUp 2s 1s forwards;
+}
+.drink3W{
+  // animation: blowUp 2s 1s forwards;
+}
+.drink4W{
+  // animation: blowUp 2s 1s forwards;
+}
+
+@keyframes di {
+  from{
+
+  }
+  to{
+    border-radius: 50%;
+    transform: translate(-9.5vw, -9vh);
+    width: 60px;
+    height: 60px;
+
+  }
+}
+@keyframes di2 {
+  from{
+
+  }
+  to{
+    border-radius: 50%;
+    transform: translate(0vw, -20vh);
+    width: 60px;
+    height: 60px;
+
+  }
+}
+@keyframes di3 {
+  from{
+
+  }
+  to{
+    border-radius: 50%;
+    transform: translate(9.5vw, -20.25vh);
+    width: 60px;
+    height: 60px;
+  }
+}
+
+// THESE ANIMATIONS ARE FOR 5 INGREDIENT DRINKS
+
+@keyframes di5 {
+  from{
+
+  }
+  to{
+    border-radius: 50%;
+    transform: translate(-9vw, -2vh);
+    width: 60px;
+    height: 60px;
+
+  }
+}
+
+@keyframes di25 {
+  from{
+
+  }
+  to{
+    border-radius: 50%;
+    transform: translate(-6vw, -13vh);
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@keyframes di35 {
+  from{
+
+  }
+  to{
+    border-radius: 50%;
+    transform: translate(0vw, -20vh);
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@keyframes di45 {
+  from{
+
+  }
+  to{
+    border-radius: 50%;
+    transform: translate(6vw, -21vh);
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@keyframes di55 {
+  from{
+
+  }
+  to{
+    border-radius: 50%;
+    transform: translate(9vw, -18vh);
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@keyframes blowUp {
+  from{
+
+  }
+  to{
+    opacity: 0;
+    transform:scale(2);
+    display: none;
+  }
+}
+
+.fiveID1 {
+  animation: di5 1s 0s forwards;
+}
+
+
+
 .drinkthumb{
   flex-direction: row;
   justify-content: center;
@@ -207,23 +336,121 @@
 
 }
 .cups{
-  border-bottom: 1px solid blue;
-  border-left: 1px solid blue;
-  border-right: 1px solid blue;
+  border-bottom: 2px solid blue;
+  border-left: 2px solid blue;
+  border-right: 2px solid blue;
   width: 100%;
   height: 20vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  .ingredient1{
-    width: 100%;
-    height: 20%;
-    background-color: red;
-  }
-  .ingredient2{
-    width: 100%;
-    height: 20%;
-    background-color: yellow;
-  }
+  align-items: center;
+}
+// OLD FASHIONED
+.ingredient1{
+  // animation: di5 1s forwards;
+  // animation-direction: alternate;
+  // animation-iteration-count: infinite;
+  width: 100%;
+  height: 18%;
+  background-color: red;
+}
+.ingredient2{
+  animation: di25 1s forwards;
+  width: 100%;
+  height: 18%;
+  background-color: yellow;
+}
+.ingredient3{
+  animation: di35 1s forwards;
+  width: 100%;
+  height: 18%;
+  background-color: blue;
+}
+.ingredient4{
+  animation: di45 1s forwards;
+  width: 100%;
+  height: 18%;
+  background-color: green;
+}
+.ingredient5{
+  animation: di55 1s forwards;
+  width: 100%;
+  height: 18%;
+  background-color: yellow;
+}
+
+// WHISKEY SOUR
+.w-s1{
+  width: 100%;
+  height: 30%;
+  background-color: red;
+}
+.w-s2{
+  width: 100%;
+  height: 30%;
+  background-color: yellow;
+}
+.w-s3{
+  width: 100%;
+  height: 30%;
+  background-color: blue;
+}
+
+// MANHATTAN
+.man-1{
+  animation: di 1s .25s forwards;
+  // animation-direction: alternate;
+  // animation-iteration-count: infinite;
+  width: 100%;
+  height: 30%;
+  background-color: red;
+}
+.man-2{
+  animation: di2 1s .5s forwards;
+  // animation-direction: alternate;
+  // animation-iteration-count: infinite;
+  width: 100%;
+  height: 30%;
+  background-color: yellow;
+}
+.man-3{
+  animation: di3 1s .75s forwards;
+  // animation-direction: alternate;
+  // animation-iteration-count: infinite;
+  width: 100%;
+  height: 30%;
+  background-color: blue;
+}
+
+// MINT JULEP
+.m-j1{
+  // animation: di 1s forwards;
+  width: 100%;
+  height: 18%;
+  background-color: red;
+}
+.m-j2{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 18%;
+  background-color: yellow;
+}
+.m-j3{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 18%;
+  background-color: blue;
+}
+.m-j4{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 18%;
+  background-color: green;
+}
+.m-j5{
+  width: 100%;
+  height: 18%;
+  background-color: yellow;
 }
