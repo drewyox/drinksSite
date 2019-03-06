@@ -50,11 +50,34 @@ module.exports = {
   },
 
   plugins: [
+
     new HtmlWebpackPlugin({
       inject: 'body',
       template: './src/index.html',
-      filename: 'index.html'
-    })
+      filename: 'index.html',
+      // minify: {
+      //   removeComments: true,
+      //   collapseWhitespace: true
+      // }
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/whiskey.html',
+      filename: 'whiskey.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/vodka.html',
+      filename: 'vodka.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tequila.html',
+      filename: 'tequila.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gin.html',
+      filename: 'gin.html'
+    }),
+
   ]
 
 };
