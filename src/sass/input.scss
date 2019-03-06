@@ -21,6 +21,15 @@
   0%{opacity: 0;}
   100%{opacity: 1;}
 }
+
+@keyframes hoverSize {
+  from {
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
 *{
   margin: 0px;
   padding: 0px;
@@ -89,17 +98,17 @@
     width: 130%;
   }
   #first{
-    animation: scribbleText 1s;
+    animation: scribbleText 1s .9s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
   }
   #second{
-    animation: scribbleText 1.2s;
+    animation: scribbleText 1s .6s;
     animation-iteration-count: infinite;
   }
   #third{
-    animation: scribbleText .9s;
+    animation: scribbleText 1s .3s;
     animation-iteration-count: infinite;
 
   }
@@ -126,7 +135,11 @@
     width: 20vw;
     max-width: 320px;
     max-height: 320px;
-
+    text-align: center;
+    img {
+      width:100%;
+      height: 100%;
+    }
   }
   .column{
     display: flex;
@@ -134,33 +147,28 @@
     align-content: space-around;
     justify-content: center;
     width:100%;
+    h2 {
+      position: absolute;
+      color: white;
+      font-size: 2em;
+      z-index: 2;
+    }
     .whiskey{
       margin-right: 30%;
-      background-color: blue;
-      h2 {
-        margin-left: -40vw;
-      }
     }
     .tequila{
       margin-right: 30%;
-      background-color: green;
-      h2 {
-        margin-left: -40vw;
-      }
     }
     .vodka{
       margin-left: 30%;
-      background-color: red;
-      h2 {
-        margin-right: -40vw;
-      }
     }
     .gin{
       margin-left: 30%;
-      background-color: yellow;
-      h2 {
-        margin-right: -40vw;
-      }
     }
   }
+}
+
+.drinks:hover {
+  animation: hoverSize .5s forwards;
+
 }
