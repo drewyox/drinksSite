@@ -1,3 +1,5 @@
+// @import src/assets/sass/_animations.scss;
+
 @keyframes scribbleText {
   0% {
     opacity: 0;
@@ -16,7 +18,12 @@
   }
 }
 @keyframes subtle {
-  
+  from{
+  transform: translateY(5px);
+  }
+  to{
+    transform: translateY(-5px);
+  }
 }
 *{
   margin: 0px;
@@ -87,10 +94,17 @@
   width: 100%;
   margin-bottom: 10vh;
   .drinks{
+    // @include animation-name(fadeInRight);
+    // @include animation-duration(2s);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vw;
+    margin-bottom: 7.5vw;
+    height: 20vw;
+    width: 20vw;
+    max-width: 320px;
+    max-height: 320px;
+
   }
   .column{
     display: flex;
@@ -100,38 +114,30 @@
     width:100%;
     .whiskey{
       margin-right: 30%;
-      height: 20vw;
-      width: 20vw;
       background-color: blue;
       h2 {
-        margin-right: -40vw;
+        margin-left: -40vw;
       }
     }
     .tequila{
       margin-right: 30%;
-      height: 20vw;
-      width: 20vw;
       background-color: green;
       h2 {
-        margin-right: -40vw;
+        margin-left: -40vw;
       }
     }
     .vodka{
       margin-left: 30%;
-      height: 20vw;
-      width: 20vw;
       background-color: red;
       h2 {
-        margin-left: -40vw;
+        margin-right: -40vw;
       }
     }
     .gin{
       margin-left: 30%;
-      height: 20vw;
-      width: 20vw;
       background-color: yellow;
       h2 {
-        margin-left: -40vw;
+        margin-right: -40vw;
       }
     }
   }
