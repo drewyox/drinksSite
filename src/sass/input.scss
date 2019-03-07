@@ -303,7 +303,7 @@
 @keyframes blowUp {
   to{
     opacity: 0;
-    transform:scale(2);
+    transform:scale(.2);
     display: none;
   }
 }
@@ -462,7 +462,5 @@
 .back{
   margin-top:2vw;
   margin-bottom: 5vw;
-  display: flex;
-  justify-content: center;
   display:none;
 }

@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 
 $(".button").click(function(){
+    $(".back").show();
     $(".ingredient1").addClass("fiveID1");
     $(".ingredient2").addClass("fiveID2");
     $(".ingredient3").addClass("fiveID3");
@@ -14,12 +15,9 @@ $(".button").click(function(){
     $(".drink2W").addClass("blowUps");
     $(".drink3W").addClass("blowUps");
     $(".drink4W").addClass("blowUps");
-    $(".back").show()
-
   })
-
-
 $(".buttonMan").click(function(){
+    $(".back").show();
     $(".man-1").addClass("threeID1");
     $(".man-2").addClass("threeID2");
     $(".man-3").addClass("threeID3");
@@ -27,8 +25,8 @@ $(".buttonMan").click(function(){
     $(".drink2W").addClass("blowUps");
     $(".drink4W").addClass("blowUps");
   })
-
 $(".buttonSou").click(function(){
+    $(".back").show();
     $(".w-s1").addClass("threeID1");
     $(".w-s2").addClass("threeID2");
     $(".w-s3").addClass("threeID3");
@@ -37,6 +35,7 @@ $(".buttonSou").click(function(){
     $(".drink4W").addClass("blowUps");
   })
 $(".buttonJ").click(function(){
+    $(".back").show();
     $(".m-j1").addClass("fiveID1");
     $(".m-j2").addClass("fiveID2");
     $(".m-j3").addClass("fiveID3");
