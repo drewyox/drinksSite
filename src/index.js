@@ -14,7 +14,10 @@ $(".button").click(function(){
     $(".drink2W").addClass("blowUps");
     $(".drink3W").addClass("blowUps");
     $(".drink4W").addClass("blowUps");
+    $(".back").show()
+
   })
+
 
 $(".buttonMan").click(function(){
     $(".man-1").addClass("threeID1");
