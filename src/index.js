@@ -6,14 +6,14 @@ $(document).ready(function(){
 
 // WHISKEY FUNCTIONS FOR ANIMATION CHANGES
 
-$(".button").click(function(){
+$(".buttonOld").click(function(){
     $(".back").show();
     $(".ingrName").addClass("textShow");
     $(".ingredient1").addClass("fiveID1");
-    $(".ingredient2").addClass("fiveID2");
-    $(".ingredient3").addClass("fiveID3");
-    $(".ingredient4").addClass("fiveID4");
-    $(".ingredient5").addClass("fiveID5");
+    $(".ingredient2").addClass("fiveID1");
+    $(".ingredient3").addClass("fiveID1");
+    $(".ingredient4").addClass("fiveID1");
+    $(".ingredient5").addClass("fiveID1");
     $(".drink1W").addClass("centerDrink");
     $("#bottomRow").hide();
     $(".drink2W").hide();
@@ -24,9 +24,9 @@ $(".button").click(function(){
 $(".buttonMan").click(function(){
     $(".back").show();
     $(".ingrName").addClass("textShow");
-    $(".man-1").addClass("threeID1");
-    $(".man-2").addClass("threeID2");
-    $(".man-3").addClass("threeID3");
+    $(".man-1").addClass("fiveID1");
+    $(".man-2").addClass("fiveID1");
+    $(".man-3").addClass("fiveID1");
     $(".drink3W").addClass("centerDrink");
     $("#topRow").hide();
     $(".drink4W").hide();
@@ -37,9 +37,9 @@ $(".buttonMan").click(function(){
 $(".buttonSou").click(function(){
     $(".back").show();
     $(".ingrName").addClass("textShow");
-    $(".w-s1").addClass("threeID1");
-    $(".w-s2").addClass("threeID2");
-    $(".w-s3").addClass("threeID3");
+    $(".w-s1").addClass("fiveID1");
+    $(".w-s2").addClass("fiveID1");
+    $(".w-s3").addClass("fiveID1");
     $(".drink2W").addClass("centerDrink");
     $("#bottomRow").hide();
     $(".drink1W").hide();
@@ -51,10 +51,10 @@ $(".buttonJ").click(function(){
     $(".back").show();
     $(".ingrName").addClass("textShow");
     $(".m-j1").addClass("fiveID1");
-    $(".m-j2").addClass("fiveID2");
-    $(".m-j3").addClass("fiveID3");
-    $(".m-j4").addClass("fiveID4");
-    $(".m-j5").addClass("fiveID5");
+    $(".m-j2").addClass("fiveID1");
+    $(".m-j3").addClass("fiveID1");
+    $(".m-j4").addClass("fiveID1");
+    $(".m-j5").addClass("fiveID1");
     $(".drink4W").addClass("centerDrink");
     $("#topRow").hide();
     $(".drink3W").hide();
@@ -62,5 +62,62 @@ $(".buttonJ").click(function(){
     $(".drink3W").addClass("blowUps");
     $(".drink1W").addClass("blowUps");
   })
+  // VODKA
+  $(".buttonCos").click(function(){
+      $(".back").show();
+      $(".ingrName").addClass("textShow");
+      $(".cosmo1").addClass("fiveID1");
+      $(".cosmo2").addClass("fiveID1");
+      $(".cosmo3").addClass("fiveID1");
+      $(".cosmo4").addClass("fiveID1");
+      $(".drink1V").addClass("centerDrink");
+      $("#bottomRowV").hide();
+      $(".drink2V").hide();
+      $(".drink2V").addClass("blowUps");
+      $(".drink3V").addClass("blowUps");
+      $(".drink4V").addClass("blowUps");
+    })
+  $(".buttonDrop").click(function(){
+      $(".back").show();
+      $(".ingrName").addClass("textShow");
+      $(".lemon-1").addClass("fiveID1");
+      $(".lemon-2").addClass("fiveID1");
+      $(".lemon-3").addClass("fiveID1");
+      $(".lemon-4").addClass("fiveID1");
+      $(".drink3V").addClass("centerDrink");
+      $("#topRowV").hide();
+      $(".drink4V").hide();
+      $(".drink1V").addClass("blowUps");
+      $(".drink2V").addClass("blowUps");
+      $(".drink4V").addClass("blowUps");
+    })
+  $(".buttonSex").click(function(){
+      $(".back").show();
+      $(".ingrName").addClass("textShow");
+      $(".sex1").addClass("fiveID1");
+      $(".sex2").addClass("fiveID1");
+      $(".sex3").addClass("fiveID1");
+      $(".sex4").addClass("fiveID1");
+      $(".sex5").addClass("fiveID1");
+      $(".drink2V").addClass("centerDrink");
+      $("#bottomRowV").hide();
+      $(".drink1V").hide();
+      $(".drink1V").addClass("blowUps");
+      $(".drink3V").addClass("blowUps");
+      $(".drink4V").addClass("blowUps");
+    })
+  $(".buttonMM").click(function(){
+      $(".back").show();
+      $(".ingrName").addClass("textShow");
+      $(".moscow1").addClass("fiveID1");
+      $(".moscow2").addClass("fiveID1");
+      $(".moscow3").addClass("fiveID1");
+      $(".drink4V").addClass("centerDrink");
+      $("#topRowV").hide();
+      $(".drink3V").hide();
+      $(".drink2V").addClass("blowUps");
+      $(".drink3V").addClass("blowUps");
+      $(".drink1V").addClass("blowUps");
+    })
 
 });

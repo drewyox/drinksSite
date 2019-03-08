@@ -18,37 +18,46 @@ module.exports = {
   module: {
     rules: [
 
-      {
-        test: /\.scss$/,
-        use: [
-            "style-loader",
-            "css-loader",
-            "sass-loader"
-        ]
-      },
-      {
-        test: /\.(gif|png|jpe?g)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/images/'
+        {
+          test: /\.(gif|png|jpe?g)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'assets/images/'
+              }
             }
+          ]
+        },
+
+        {
+          test:/\.html$/,
+          use: [
+            'html-loader'
+          ]
+        },
+
+        {
+          test: /\.scss$/,
+          use: [
+              "style-loader",
+              "css-loader",
+              "sass-loader"
+          ]
+        },
+        {
+          test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+          use: [{
+              loader: 'file-loader',
+              options: {
+                  name: '[name].[ext]',
+                  outputPath: 'fonts/'
+              }
+            }]
           }
         ]
       },
-
-      {
-        test:/\.html$/,
-        use: [
-          'html-loader'
-        ]
-      },
-
-    ]
-  },
-
   plugins: [
 
     new HtmlWebpackPlugin({

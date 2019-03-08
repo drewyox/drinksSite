@@ -1,34 +1,10 @@
-// THESE ANIMATIONS ARE FOR 3 INGREDIENT DRINKS
+@font-face {
+  font-family: 'Thin';
+  src:url('../assets/fonts/condensed.ttf');
+};
 
+$font-main: 'Thin', sans-serif;
 
-
-@keyframes di {
-  to{
-    border-radius: 50%;
-    transform: translate(10vw, 0vh);
-    width: 60px;
-    height: 60px;
-    z-index: 5;
-  }
-}
-@keyframes di2 {
-  to{
-    border-radius: 50%;
-    transform: translate(10vw, 0vh);
-    width: 60px;
-    height: 60px;
-    z-index: 5;
-  }
-}
-@keyframes di3 {
-  to{
-    border-radius: 50%;
-    transform: translate(10vw, 0vh);
-    width: 60px;
-    height: 60px;
-    z-index: 5;
-  }
-}
 
 // THESE ANIMATIONS ARE FOR 5 INGREDIENT DRINKS
 @keyframes di5 {
@@ -37,7 +13,7 @@
   }
   to{
     border-radius: 50%;
-    transform: translate(10vw,0vh);
+    transform: translate(11vw,0vh);
     width: 60px;
     height: 60px;
     z-index: 5;
@@ -50,7 +26,7 @@
   }
   to{
     border-radius: 50%;
-    transform: translate(10vw, 0vh);
+    transform: translate(11vw, 0vh);
     width: 60px;
     height: 60px;
     z-index: 5;
@@ -62,7 +38,7 @@
   }
   to{
     border-radius: 50%;
-    transform: translate(10vw, 0vh);
+    transform: translate(11vw, 0vh);
     width: 60px;
     height: 60px;
     z-index: 5;
@@ -74,7 +50,7 @@
   }
   to{
     border-radius: 50%;
-    transform: translate(10vw, 0vh);
+    transform: translate(11vw, 0vh);
     width: 60px;
     height: 60px;
     z-index: 5;
@@ -86,12 +62,28 @@
   }
   to{
     border-radius: 50%;
-    transform: translate(10vw, 0Vh);
+    transform: translate(11vw, 0Vh);
     width: 60px;
     height: 60px;
     z-index: 5;
   }
 }
+.fiveID1 {
+  animation: di5 1s 1s forwards;
+}
+.fiveID2 {
+  animation: di25 1s 1.2s forwards;
+}
+.fiveID3 {
+  animation: di35 1s 1.4s forwards;
+}
+.fiveID4 {
+  animation: di45 1s 1.6s forwards;
+}
+.fiveID5 {
+  animation: di55 1s 1.8s forwards;
+}
+
 
 @keyframes blowUp {
   to{
@@ -101,8 +93,6 @@
     z-index: -5;
   }
 }
-// @import src/assets/sass/_animations.scss;
-
 @keyframes scribbleText {
   0% {
     opacity: 0;
@@ -124,6 +114,7 @@
   0%{opacity: 0;}
   100%{opacity: 1;}
 }
+
 
 @keyframes hoverSize {
   from {
@@ -259,7 +250,7 @@
 }
 
 .standAlone {
-  font-family: sans-serif;
+  font-family: $font-main;
   font-size: 2em;
   font-weight: lighter;
   text-align: center;
@@ -267,8 +258,6 @@
   margin-top: -5vw;
   margin-bottom: 5vw;
 }
-
-
 .drinkTypes{
   display: flex;
   flex-direction: column;
@@ -276,9 +265,10 @@
   align-content: space-between;
   width: 100%;
   margin-bottom: 5vh;
+  margin-top: 5vh;
+  font-family: $font-main;
+  font-size: 2em;
   .drinks{
-    // @include animation-name(fadeInRight);
-    // @include animation-duration(2s);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,12 +311,10 @@
     }
   }
 }
-
 .drinks:hover {
   animation: hoverSize .5s forwards;
 
 }
-
 .rows{
   animation: fadeIn .25s 0s forwards;
   margin: auto;
@@ -339,6 +327,26 @@
   align-content: space-around;
 
 }
+.button{
+  border: none;
+  font-family: $font-main;
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 5px;
+  padding: 3px;
+  border-radius: 5px;
+  text-decoration: underline;
+  color: grey;
+  border: 2px solid white;
+}
+
+
+.button:hover {
+  background-color: lightblue;
+  color: white;
+  border: 2px solid silver;
+  }
 .drinksWhiskey{
   width: 100%;
   height: 100%;
@@ -348,34 +356,16 @@
   align-items: center;
   padding: none;
 }
-
-
-.fiveID1 {
-  animation: di5 1s 1s forwards;
-}
-.fiveID2 {
-  animation: di25 1s 1.2s forwards;
-}
-.fiveID3 {
-  animation: di35 1s 1.4s forwards;
-}
-.fiveID4 {
-  animation: di45 1s 1.6s forwards;
-}
-.fiveID5 {
-  animation: di55 1s 1.8s forwards;
+.drinksVodka{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: none;
 }
 
-
-.threeID1{
-  animation: di 1s 1s forwards;
-}
-.threeID2{
-  animation: di2 1s 1.3s forwards;
-}
-.threeID3{
-  animation: di3 1s 1.6s forwards;
-}
 
 // CENTER
 .centerDrink{
@@ -392,12 +382,6 @@
   background-color: silver;
   padding: 2px;
 }
-// .drink1W{
-//   display: flex;
-//   flex-direction: row;
-//   align-items: flex-end;
-//   width: 100vw;
-// }
 
 .drinkthumb{
 
@@ -415,138 +399,145 @@
   }
 }
 .cups{
-  border-bottom: 2px solid blue;
-  border-left: 2px solid blue;
-  border-right: 2px solid blue;
+  border-bottom: 5px solid lightblue;
+  border-left: 5px solid lightblue;
+  border-right: 5px solid lightblue;
   width: 100%;
   height: 20vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
-// OLD FASHIONED
-.ingredient1{
-  width: 100%;
-  height: 18%;
-  background-color: red;
-}
-.ingredient2{
-  width: 100%;
-  height: 18%;
-  background-color: yellow;
-}
-.ingredient3{
-  width: 100%;
-  height: 18%;
-  background-color: blue;
-}
-.ingredient4{
-  width: 100%;
-  height: 18%;
-  background-color: green;
-}
-.ingredient5{
-  width: 100%;
-  height: 18%;
-  background-color: yellow;
-}
-
-// WHISKEY SOUR
-.w-s1{
-  width: 100%;
-  height: 30%;
-  background-color: red;
-}
-.w-s2{
-  width: 100%;
-  height: 30%;
-  background-color: yellow;
-}
-.w-s3{
-  width: 100%;
-  height: 30%;
-  background-color: blue;
-}
-// WHISKEY DRINKS
-// MANHATTAN
-.man-1{
-  width: 100%;
-  height: 30%;
-  background-color: red;
-}
-.man-2{
-  width: 100%;
-  height: 30%;
-  background-color: yellow;
-}
-.man-3{
-  width: 100%;
-  height: 30%;
-  background-color: blue;
-}
-// MINT JULEP
-.m-j1{
-  // animation: di 1s forwards;
-  width: 100%;
-  height: 18%;
-  background-color: red;
-}
-.m-j2{
-  // animation: di3 1s forwards;
-  width: 100%;
-  height: 18%;
-  background-color: yellow;
-}
-.m-j3{
-  // animation: di3 1s forwards;
-  width: 100%;
-  height: 18%;
-  background-color: blue;
-}
-.m-j4{
-  // animation: di3 1s forwards;
-  width: 100%;
-  height: 18%;
-  background-color: green;
-}
-.m-j5{
-  width: 100%;
-  height: 18%;
-  background-color: yellow;
-}
-
-.containerWhiskey{
-  display: flex;
-  flex-direction: column;
-}
 .back{
   margin-top:8vw;
   margin-bottom: 5vw;
   display:none;
 }
+
+
+// WHISKEY DRINKS
+
+.containerWhiskey{
+  display: flex;
+  flex-direction: column;
+}
+
+// OLD FASHIONED
+.ingredient1{
+  width: 100%;
+  height: 10%;
+  background-color: #cc0000;
+}
+.ingredient2{
+  width: 100%;
+  height: 10%;
+  background-color: #fffae9;
+}
+.ingredient3{
+  width: 100%;
+  height: 10%;
+  background-color: #993300;
+}
+.ingredient4{
+  width: 100%;
+  height: 10%;
+  background-color: orange;
+}
+.ingredient5{
+  width: 100%;
+  height: 50%;
+  background-color: #d4a30c;
+}
+
+// WHISKEY SOUR
+.w-s1{
+  width: 100%;
+  height: 15%;
+  background-color: #fffae9;
+}
+.w-s2{
+  width: 100%;
+  height: 25%;
+  background-color: yellow;
+}
+.w-s3{
+  width: 100%;
+  height: 50%;
+  background-color: #d4a30c;
+}
+// MANHATTAN
+.man-1{
+  width: 100%;
+  height: 10%;
+  background-color: #993300;
+}
+.man-2{
+  width: 100%;
+  height: 25%;
+  background-color: #ccffcc;
+}
+.man-3{
+  width: 100%;
+  height: 50%;
+  background-color: #d4a30c;
+}
+// MINT JULEP
+.m-j1{
+  // animation: di 1s forwards;
+  width: 100%;
+  height: 5%;
+  background-color: lightblue;
+}
+.m-j2{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 5%;
+  background-color: green;
+}
+.m-j3{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 12.5%;
+  background-color: #fffae9;
+}
+.m-j4{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 25%;
+  background-color: #0099ff;
+}
+.m-j5{
+  width: 100%;
+  height: 45%;
+  background-color: #d4a30c;
+}
+
+
 // VODKA DRINKS
 // COSMO
 .cosmo1{
   width: 100%;
-  height: 23%;
-  background-color: blue;
+  height: 10%;
+  background-color: #ffcc66;
 }
 .cosmo2{
   width: 100%;
-  height: 23%;
-  background-color: red;
+  height: 10%;
+  background-color: limegreen;
 }
 .cosmo3{
   width: 100%;
-  height: 23%;
-  background-color: green;
+  height: 17.5%;
+  background-color: red;
 }
 .cosmo4{
   width: 100%;
-  height: 23%;
-  background-color: pink;
+  height: 50%;
+  background-color: #e6f7ff;
 }
 // SEX ON THE Beach
 .sex1{
@@ -578,22 +569,22 @@
 .lemon-1{
   width: 100%;
   height: 23%;
-  background-color: pink;
+  background-color: #e6f7ff;
 }
 .lemon-2{
   width: 100%;
   height: 23%;
-  background-color: pink;
+  background-color: #ffcc66;
 }
 .lemon-3{
   width: 100%;
   height: 23%;
-  background-color: pink;
+  background-color: #fffae9;
 }
 .lemon-4{
   width: 100%;
   height: 23%;
-  background-color: pink;
+  background-color: yellow;
 }
 // MOSCOW MULE
 .moscow1{
@@ -610,4 +601,4 @@
   width: 100%;
   height: 30%;
   background-color: pink;
-}
+};
